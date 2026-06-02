@@ -1,7 +1,7 @@
 import { createClient } from '@/lib/supabase/server'
 import { createGroq } from '@ai-sdk/groq'
 import { generateText } from 'ai'
-import { tools } from '@/lib/ai/tools'
+import { toolSchemas } from '@/lib/ai/tools'
 import {
   handleGetSpendingByCategory,
   handleGetTransactions,
@@ -72,51 +72,51 @@ Current date: ${new Date().toISOString().split('T')[0]}`
       ],
       tools: {
         getSpendingByCategory: {
-          ...tools.getSpendingByCategory,
+          ...toolSchemas.getSpendingByCategory,
           execute: async (params) => handleGetSpendingByCategory(user.id, params),
         },
         getTransactions: {
-          ...tools.getTransactions,
+          ...toolSchemas.getTransactions,
           execute: async (params) => handleGetTransactions(user.id, params),
         },
         getMonthlySummary: {
-          ...tools.getMonthlySummary,
+          ...toolSchemas.getMonthlySummary,
           execute: async (params) => handleGetMonthlySummary(user.id, params),
         },
         getLargestTransactions: {
-          ...tools.getLargestTransactions,
+          ...toolSchemas.getLargestTransactions,
           execute: async (params) => handleGetLargestTransactions(user.id, params),
         },
         getRecurringCharges: {
-          ...tools.getRecurringCharges,
+          ...toolSchemas.getRecurringCharges,
           execute: async () => handleGetRecurringCharges(user.id),
         },
         compareSpending: {
-          ...tools.compareSpending,
+          ...toolSchemas.compareSpending,
           execute: async (params) => handleCompareSpending(user.id, params),
         },
         manageBudget: {
-          ...tools.manageBudget,
+          ...toolSchemas.manageBudget,
           execute: async (params) => handleManageBudget(user.id, params),
         },
         checkBudgetStatus: {
-          ...tools.checkBudgetStatus,
+          ...toolSchemas.checkBudgetStatus,
           execute: async (params) => handleCheckBudgetStatus(user.id, params),
         },
         detectAnomalies: {
-          ...tools.detectAnomalies,
+          ...toolSchemas.detectAnomalies,
           execute: async (params) => handleDetectAnomalies(user.id, params),
         },
         getUserPreferences: {
-          ...tools.getUserPreferences,
+          ...toolSchemas.getUserPreferences,
           execute: async () => handleGetUserPreferences(user.id),
         },
         saveUserPreference: {
-          ...tools.saveUserPreference,
+          ...toolSchemas.saveUserPreference,
           execute: async (params) => handleSaveUserPreference(user.id, params),
         },
         searchMerchant: {
-          ...tools.searchMerchant,
+          ...toolSchemas.searchMerchant,
           execute: async (params) => {
             // Stub: In production, would use search API
             return {
@@ -127,7 +127,7 @@ Current date: ${new Date().toISOString().split('T')[0]}`
           },
         },
         getSpendingInsights: {
-          ...tools.getSpendingInsights,
+          ...toolSchemas.getSpendingInsights,
           execute: async (params) => {
             // This would use a separate LLM call to analyze data and generate insights
             // For now, return a stub
@@ -138,7 +138,6 @@ Current date: ${new Date().toISOString().split('T')[0]}`
           },
         },
       },
-      maxSteps: 5, // Allow multi-step reasoning
     })
 
     // Save conversation to database
