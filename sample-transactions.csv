@@ -1,0 +1,44 @@
+date,description,amount,category,merchant,type
+2024-01-15,Grocery Store Purchase,125.50,Groceries,Whole Foods,debit
+2024-01-16,Netflix Subscription,15.99,Entertainment,Netflix,debit
+2024-01-17,Gas Station,45.00,Transportation,Shell,debit
+2024-01-18,Salary Deposit,3500.00,Income,Employer Inc,credit
+2024-01-20,Restaurant Dinner,78.50,Dining,Olive Garden,debit
+2024-01-22,Electric Bill,120.00,Utilities,City Power,debit
+2024-01-25,Coffee Shop,5.50,Dining,Starbucks,debit
+2024-01-28,Gym Membership,50.00,Health,Planet Fitness,debit
+2024-02-01,Rent Payment,1200.00,Housing,Landlord,debit
+2024-02-05,Grocery Store Purchase,98.75,Groceries,Whole Foods,debit
+2024-02-08,Amazon Purchase,45.99,Shopping,Amazon,debit
+2024-02-10,Netflix Subscription,15.99,Entertainment,Netflix,debit
+2024-02-12,Gas Station,48.00,Transportation,Shell,debit
+2024-02-15,Salary Deposit,3500.00,Income,Employer Inc,credit
+2024-02-18,Restaurant Lunch,32.50,Dining,Chipotle,debit
+2024-02-20,Water Bill,35.00,Utilities,City Water,debit
+2024-02-22,Coffee Shop,6.00,Dining,Starbucks,debit
+2024-02-25,Gym Membership,50.00,Health,Planet Fitness,debit
+2024-02-28,Phone Bill,75.00,Utilities,Verizon,debit
+2024-03-01,Rent Payment,1200.00,Housing,Landlord,debit
+2024-03-03,Grocery Store Purchase,142.30,Groceries,Whole Foods,debit
+2024-03-05,Spotify Subscription,9.99,Entertainment,Spotify,debit
+2024-03-08,Gas Station,52.00,Transportation,Shell,debit
+2024-03-10,Netflix Subscription,15.99,Entertainment,Netflix,debit
+2024-03-12,Restaurant Dinner,95.00,Dining,Red Lobster,debit
+2024-03-15,Salary Deposit,3500.00,Income,Employer Inc,credit
+2024-03-18,Electric Bill,135.00,Utilities,City Power,debit
+2024-03-20,Coffee Shop,7.50,Dining,Starbucks,debit
+2024-03-22,Gym Membership,50.00,Health,Planet Fitness,debit
+2024-03-25,Amazon Purchase,67.50,Shopping,Amazon,debit
+2024-03-28,Grocery Store Purchase,110.00,Groceries,Whole Foods,debit
+2024-04-01,Rent Payment,1200.00,Housing,Landlord,debit
+2024-04-03,Gas Station,46.50,Transportation,Shell,debit
+2024-04-05,Netflix Subscription,15.99,Entertainment,Netflix,debit
+2024-04-08,Restaurant Lunch,28.75,Dining,Panera Bread,debit
+2024-04-10,Water Bill,38.00,Utilities,City Water,debit
+2024-04-12,Coffee Shop,5.75,Dining,Starbucks,debit
+2024-04-15,Salary Deposit,3500.00,Income,Employer Inc,credit
+2024-04-18,Grocery Store Purchase,156.90,Groceries,Whole Foods,debit
+2024-04-20,Gym Membership,50.00,Health,Planet Fitness,debit
+2024-04-22,Phone Bill,75.00,Utilities,Verizon,debit
+2024-04-25,Amazon Purchase,89.99,Shopping,Amazon,debit
+2024-04-28,Unusual Large Purchase,1250.00,Shopping,Electronics Store,debit
